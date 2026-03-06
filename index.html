@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>speak number guessing game</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>guess a number between 1 – 100</h1>
+    <h3>(speak the number or type it below)</h3>
+
+    <!-- start recording button w. image -->
+    <button id="start-recording" class="record-btn">
+      <img src="img/mic.png" alt="microphone" />
+      start speaking
+    </button>
+
+    <!-- manual guess form -->
+    <form id="guess-form">
+      <input
+        type="number"
+        id="manual-input"
+        placeholder="enter your guess"
+        min="1"
+        max="100"
+      />
+      <button type="submit">guess</button>
+    </form>
+
+    <div id="msg" class="msg"></div>
+  </body>
+</html>
