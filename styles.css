@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f3542 url('img/bg.png') no-repeat left center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Silkscreen", sans-serif;
+}
+
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 22px; /* smaller */
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 14px; /* smaller */
+}
+
+.msg {
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/**mic button**/
+.record-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 26px;
+  font-size: 16px;
+
+  background: rgba(255, 105, 180, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  border-radius: 14px;
+
+  color: white;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.35);
+
+  transition: all 0.25s ease;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.record-btn:hover {
+  background: rgba(255, 105, 180, 0.35);
+  transform: translateY(-2px);
+}
+
+/*mic image*/
+.record-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/*button font styles*/
+button, input {
+  font-family: "Silkscreen", sans-serif;
+}
+
+/*guess form button*/
+#guess-form button {
+  padding: 14px 22px;
+  font-size: 16px;
+
+  background: rgba(255, 105, 180, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  border-radius: 14px;
+
+  color: white;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.35);
+
+  transition: all 0.25s ease;
+}
+
+#guess-form button:hover {
+  background: rgba(255, 105, 180, 0.35);
+  transform: translateY(-2px);
+}
+
+/*glass input field*/
+#manual-input {
+  padding: 14px 16px;
+  font-size: 16px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+
+  color: white;
+}
+
+#manual-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
